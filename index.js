@@ -48,7 +48,7 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */) {
+function processLength(num1, num2) {
   /* CODE HERE */
 }
 
