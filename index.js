@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ⭐️ Example Challenge START ⭐️
 
 /**
@@ -87,10 +88,9 @@ function processLastItem(stringList, callback) {
  * should return 1000.
  */
 function processSum(numberList, callback) {
-let ts= numberList.reduce((total, num) => {
-    return total += num;  
+  const Sum = numberList.reduce((total, state) => {
+    return total += state.population;
   }, 0);
-   return callback(ts);
 /**
  * ### Challenge `processProduct`
  *
@@ -110,7 +110,7 @@ let ts= numberList.reduce((total, num) => {
  * should return 1000.
  */
 function processProduct(num1, num2, callback) {
- function multiply(num1, num2,) {
+  function multiply(num1, num2,) {
   return (num1*num2);
 } 
 return callback(multiply);
