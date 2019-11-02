@@ -90,7 +90,7 @@ function processLastItem(stringList, callback) {
 function processSum(numberList, callback) {
   const Sum = numberList.reduce((total, state) => {
     return total += state.population;
-  }, 0);
+  }, 0)};
 /**
  * ### Challenge `processProduct`
  *
