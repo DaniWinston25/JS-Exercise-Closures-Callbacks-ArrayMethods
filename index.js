@@ -110,12 +110,10 @@ function processSum(numberList, callback) {
  * should return 1000.
  */
 function processProduct(num1, num2, callback) {
-  function multiply(num1, num2,) {
-  return (num1*num2);
+  function addTwoNumbers(num1, num2,) {
+    const sum = num1 + num2;}
+  return callback(addTwoNumbers);
 } 
-return callback(multiply);
-}
-
 
 /**
  * ### Challenge `processContains`
