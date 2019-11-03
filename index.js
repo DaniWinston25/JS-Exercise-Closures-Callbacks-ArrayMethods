@@ -138,7 +138,14 @@ function processProduct(num1, num2, callback) {
  * should return "sad".
  */
 function processContains(item, list, callback) {
-  /* CODE HERE */
+  function getList(list, item) {
+    if (item >= list) {
+      return list;
+    } else {
+      return item;
+    }
+  }
+  return callback(getList);
 }
 
 /**
