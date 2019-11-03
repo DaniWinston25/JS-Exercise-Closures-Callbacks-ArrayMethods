@@ -88,9 +88,12 @@ function processLastItem(stringList, callback) {
  * should return 1000.
  */
 function processSum(numberList, callback) {
-  const Sum = numberList.reduce((total, number) => {
-    return total += number.sum;
-  }, 0)};
+  const sum = numberList.reduce(sum, 0);
+  function sum(accum, item) {
+    return accum + item;
+  }
+  return callback(sum);
+}
 /**
  * ### Challenge `processProduct`
  *
@@ -110,10 +113,9 @@ function processSum(numberList, callback) {
  * should return 1000.
  */
 function processProduct(num1, num2, callback) {
-  function addTwoNumbers(num1, num2,) {
-    const sum = num1 + num2;}
-  return callback(addTwoNumbers);
-} 
+  const sum = num1 + num2;
+  return callback(sum);
+}
 
 /**
  * ### Challenge `processContains`
