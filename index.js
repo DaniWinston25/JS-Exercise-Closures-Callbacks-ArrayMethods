@@ -192,8 +192,8 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
 function getFullNames(runners) {
   // const name1 = first_name;
   // const name2 = last_name;
-  runners.forEach(function(name1, name2) {
-    return name2 + name1;
+  runners.forEach(function(last_name, first_name) {
+    return last_name + first_name;
   });
 }
 
