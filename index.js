@@ -254,7 +254,6 @@ function tallyUpDonations(runners) {
   }
 }
 
-
 /////////////// CLOSURES ///////////////
 /////////////// CLOSURES ///////////////
 
@@ -271,13 +270,17 @@ function tallyUpDonations(runners) {
  * counter() // should return 2
  * etc
  */
-function counterMaker() {
+function counterMaker(count) {
   // BROKEN CODE STARTS
   const count = 0;
-  function counter() {
-    ++count;
+  function count() {
+    return function() {
+      counter += 1;
+      return counter;
+    };
+
+    // BROKEN CODE ENDS
   }
-  // BROKEN CODE ENDS
 }
 
 /**
