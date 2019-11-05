@@ -213,7 +213,6 @@ function firstNamesAllCaps(runners) {
   runners.map(function(runners) {
     return runners.first_name.toUpperCase();
   });
-  return firstNamesAllCaps();
 }
 
 /**
@@ -272,7 +271,7 @@ function tallyUpDonations(runners) {
  */
 function counterMaker(count) {
   // BROKEN CODE STARTS
-  const count = 0;
+  // const count = 0;
   function count() {
     return function() {
       counter += 1;
