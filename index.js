@@ -210,10 +210,10 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
  */
 function firstNamesAllCaps(runners) {
-  runners.map(uppercase);
-  function uppercase(first_name) {
-    return first_name.toUpperCase();
-  }
+  runners.map(function(runners) {
+    return runners.first_name.toUpperCase();
+  });
+  return firstNamesAllCaps();
 }
 
 /**
