@@ -113,7 +113,7 @@ function processSum(numberList, callback) {
  * should return 1000.
  */
 function processProduct(num1, num2, callback) {
-  const sum = num1 + num2;
+  const sum = num1 * num2;
   return callback(sum);
 }
 
@@ -230,11 +230,11 @@ function firstNamesAllCaps(runners) {
  * The runners in the array appear in the same order they appear in the `runners` array.
  */
 function getRunnersByTShirtSize(runnners, tShirtSize) {
-  function filterItems(runners, tShirtSize) {
-    return runners.filter(function(el) {
-      return el.indexOf(tShirtSize);
-    });
-  }
+  const tShirtSize = runners.filter(function(runner){
+    //     console.log(runner)
+   return runner.shirt_size === shirt_size; 
+  });
+// return tShirtSize;
 }
 
 /**
