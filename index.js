@@ -232,7 +232,7 @@ function firstNamesAllCaps(runners) {
 function getRunnersByTShirtSize(runners, shirt_size) {
   const tShirtSize = runners.filter(function(runner){
     //     console.log(runner)
-   return runner.shirt_size === shirt_size; 
+ runner.shirt_size === shirt_size; 
   });
 // return tShirtSize;
 }
